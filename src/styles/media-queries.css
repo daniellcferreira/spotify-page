@@ -1,0 +1,144 @@
+@media screen and (max-width: 1807px) {
+	.offer__list-item {
+		grid-template-columns: 1fr 1fr 1fr 1fr !important;
+	}
+}
+
+@media screen and (max-width: 1441px) {
+	.offer__list-item {
+		grid-template-columns: 1fr 1fr 1fr !important;
+	}
+
+	.header__navigation {
+		justify-content: flex-start;
+	}
+
+	.header__search {
+		margin-right: 4rem;
+	}
+}
+
+@media screen and (max-width: 976px) {
+	.header__navigation {
+		justify-content: flex-start;
+	}
+
+	.header__search {
+		margin-right: 1rem;
+		width: 14rem;
+	}
+
+	.arrow-left,
+	.arrow-right {
+		display: none;
+	}
+
+	.header__login .subscribe {
+		font-size: 12px !important;
+		padding: 10px !important;
+		margin-right: 5px !important;
+	}
+
+	.offer__list-item {
+		grid-template-columns: 1fr 1fr !important;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr 1fr !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+
+	.playlist-container {
+		width: 92%;
+	}
+
+	.header__navigation {
+		width: 92%;
+		justify-content: space-between;
+	}
+
+	.hamburger-menu {
+		color: white;
+		font-size: 2rem;
+		display: block;
+		margin: 0.4rem;
+		cursor: pointer;
+	}
+
+	.sidebar {
+		display: none;
+		position: fixed;
+		top: 1rem;
+		left: 4.5rem;
+		z-index: 999;
+	}
+
+	.main-container {
+		margin: 0;
+		width: 100vw;
+	}
+
+	.footer-area {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.playlist-container {
+		height: 100%;
+	}
+
+	.offer__scroll-container {
+		height: 100% !important;
+	}
+
+	.offer__list-item {
+		grid-template-columns: 1fr !important;
+	}
+
+	.header__login {
+		display: block !important;
+	}
+
+	.subscribe,
+	.login {
+		display: none !important;
+	}
+
+	@media screen and (max-width: 375px) {
+		body {
+			display: flex;
+			justify-content: center;
+		}
+
+		.hamburger-menu {
+			color: white;
+			font-size: 2rem;
+			display: block;
+			margin: 0.4rem;
+			cursor: pointer;
+		}
+
+		.sidebar {
+			display: none;
+			position: fixed;
+			top: 5rem;
+			left: 2rem;
+			z-index: 999;
+		}
+
+		.main-container {
+			margin: 0;
+		}
+
+		.footer-area {
+			display: none;
+		}
+  }
+}  

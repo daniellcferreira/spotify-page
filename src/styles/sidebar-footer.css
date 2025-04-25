@@ -1,0 +1,243 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 18.75rem;
+  background-color: #000000;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar .logo {
+  background-color: #121212;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.sidebar .logo img {
+  width: 5rem;
+}
+
+.sidebar__navigation {
+  background-color: #121212;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0 1.25rem 0.625rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.sidebar nav ul li {
+	padding: 0.625rem 0;
+}
+
+.sidebar nav ul li a {
+	color: #b3b3b3;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.875rem;
+}
+
+.sidebar nav ul li .fa {
+	font-size: 1.25rem;
+	margin-right: 0.625rem;
+	font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+	color: #ffffff;
+}
+
+.library {
+	height: 70vh;
+	background-color: #121212;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: flex-start;
+	min-block-size: 2.5rem;
+	padding: 0.25rem 0.5rem;
+	color: #b3b3b3;
+	font-weight: 600;
+	font-size: 0.875rem;
+	margin-top: 0.625rem;
+	flex-direction: column;
+}
+
+.library .library__button {
+	margin-right: 0.625rem;
+	color: #b3b3b3;
+	background-color: transparent;
+	border: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	padding: 1.25rem 0.625rem;
+	display: flex;
+}
+
+.library .library__button .fa {
+	font-size: 1.25rem;
+	margin-right: 0.625rem;
+	font-weight: 300;
+	padding-right: 0.5rem;
+}
+
+.library__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.library .library__content .fa-plus {
+	margin: 1.5rem 0.625rem ;
+	cursor: pointer;
+}
+
+.section-playlist {
+	background-color: #242424;
+	align-items: flex-start;
+	border-radius: 0.5rem;
+	gap: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	min-block-size: 2.5rem;
+	color: #b3b3b3;
+	font-weight: 600;
+	font-size: 0.875rem;
+	margin: 0.5rem 0;
+	padding: 1rem 1.25rem;
+}
+
+.section-playlist .section-playlist__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-playlist__content .text {
+	padding-bottom: 0.875rem;
+	color: #fff;
+}
+
+.section-playlist__content .title {
+	font-weight: 700;
+}
+
+.section-playlist__content .subtitle {
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+
+.section-playlist__content .section-playlist__button {
+	background-color: #ffffff;
+	color: #000;
+	border-radius: 9999px;
+	display: flex;
+	font-size: 0.8rem;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	text-transform: none;
+	padding: 10px;
+	border: 0px;
+	width: 113px;
+	justify-content: center;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+.section-playlist__button:hover {
+	transform: scale(1.05);
+}
+
+.sidebar .cookies {
+	margin: 25px 20px;
+}
+
+.sidebar .cookies a {
+	color: #b3b3b3;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.sidebar .cookies a:hover {
+	text-decoration: underline;
+}
+
+.languages .languages__button {
+	background-color: transparent;
+	border-radius: 9999px;
+	border: 1px solid #878787;
+	color: #fff;
+	cursor: pointer;
+	align-items: center;
+	padding: 8px;
+	width: 170px;
+	margin: 8px;
+	font-weight: bold;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+.footer-area {
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(to right, #d632ec, #ccd3f0);
+	line-height: 1.2rem;
+	position: fixed;
+	bottom: 0.4rem;
+	left: 0.4rem;
+	right: 0.4rem;
+	padding: 1rem;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.footer-area__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer__button {
+	background-color: #111;
+	color: #fff;
+	border-radius: 3rem;
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: none;
+	padding: 1rem;
+	margin-right: 3rem;
+	border: 0px;
+	width: auto;
+	cursor: pointer;
+}
+
+.footer__button span {
+	padding: 1rem;
+}
+
+.footer__button:hover {
+	text-decoration: underline;
+}
+
+.footer-area__content .title {
+	font-weight: 700;
+	padding: 0.2rem;
+}
+
+.footer-area__content .subtitle {
+	font-weight: 400;
+	font-size: 1rem;
+	padding: 0.2rem;
+}

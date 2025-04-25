@@ -1,0 +1,376 @@
+.main-container {
+  width: 80vw;
+  height: 100rem;
+  margin-left: 20rem;
+  margin-right: 3.5rem;
+}
+
+.header__navigation {
+  position: fixed;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: #121212;
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+  margin-right: 0.9375rem;
+}
+
+.arrow-left,
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--bg-icon);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.fa-user {
+  color: white;
+  display: none;
+  font-size: 1.6rem;
+  margin: 0.6rem;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 22.75rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+  background-color: #242424;
+  border-radius: 31.25rem;
+  border: 0.0625rem solid transparent;
+}
+
+.header__search img {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1.25rem;
+}
+
+.header__search input {
+  background: transparent;
+  border: none;
+  padding: 0 6.25rem 0 0.75rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.header__login .subscribe {
+  color: var(--text-sub);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.header__login .login {
+  width: 6.25rem;
+  height: 3rem;
+  color: var(--text-base-dark);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.header__search:hover {
+  border: 0.0625rem solid #fff;
+}
+
+.header__login .subscribe:hover,
+.header__login .login:hover {
+  transform: scale(1.05);
+}
+
+.playlist-container {
+  position: fixed;
+  width: 70%;
+  top: 5rem;
+  height: 77vh;
+  padding: 1rem 0.625rem;
+  margin: 1rem;
+  border-radius: 0.625rem;
+  background-color: #121212;
+}
+
+.playlist {
+  margin: 3rem;
+}
+
+.playlist .greeting {
+  color: var(--text-base-light);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.playlist .session {
+  color: var(--text-base-light);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.offer__scroll-container {
+  max-height: 52vh;
+  margin: 3rem;
+  overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 0.0625rem;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.offer__list-item {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  position: relative;
+  width: 13.75rem;
+  height: 12.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.cards span {
+  padding: 1rem;
+  position: absolute;
+  color: var(--text-base-light);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card1 {
+	background-color: #ee9bb8;
+}
+
+.card2 {
+	background-color: rgb(132, 0, 231);
+}
+
+.card3 {
+	background: rgb(186, 93, 7);
+}
+
+.card4 {
+	background: rgb(232, 17, 91);
+}
+
+.card5 {
+	background: rgb(140, 25, 50);
+}
+
+.card6 {
+	background: rgb(83, 122, 161);
+}
+
+.card7 {
+	background: rgb(142, 102, 172);
+}
+
+.card8 {
+	background: rgb(30, 50, 100);
+}
+
+.card9 {
+	background: rgb(20, 138, 8);
+}
+
+.card10 {
+	background: rgb(233, 20, 41);
+}
+
+.card11 {
+	background: rgb(30, 50, 100);
+}
+
+.card12 {
+	background: rgb(216, 64, 0);
+}
+
+.card13 {
+	background: rgb(80, 55, 80);
+}
+
+.card14 {
+	background: rgb(0, 30, 80);
+}
+
+.card15 {
+	background: rgb(60, 30, 80);
+}
+
+.offer__list-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 125px;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+.artist {
+  --column-count: 5;
+	--grid-gap: 24px;
+	--min-container-width: 372px;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid-container {
+  grid-gap: var(--grid-gap);
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+  min-width: var(--min-container-width);
+}
+
+.artist-card {
+  background: #181818;
+  border-radius: 8px;
+  -ms-flex: 1;
+  flex: 1;
+  isolation: isolate;
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.artist-card:hover {
+  background-color: #252525;
+}
+
+.card-img {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.artist-img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.card-text {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-height: 62px;
+}
+
+.card-text a {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.artist-name {
+	box-sizing: border-box;
+	margin-block: 0px;
+	font-size: 16px;
+	font-weight: 700;
+	padding-block-end: 8px;
+}
+
+.artist-categorie {
+	color: #6a6a6a;
+	font-weight: 400;
+	font-size: 0.875rem;
+}
+
+.play {
+  position: absolute; /* Fixa o botão no card */
+  bottom: 10px; /* Distância da borda inferior */
+  right: 10px; /* Distância da borda direita */
+  background-color: #1db954; /* Cor verde do Spotify */
+  border-radius: 50%; /* Deixa o botão redondo */
+  padding: 18px; /* Tamanho adequado para o botão */
+  font-size: 24px; /* Tamanho do ícone */
+  color: white; /* Cor do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave de cor */
+  z-index: 2; /* Coloca o botão acima da imagem do artista */
+}
+
+.play .fa-play,
+.play .fa-pause {
+  font-size: 24px; /* Tamanho do ícone de play/pause */
+}
+
+.play:hover {
+  background-color: #1ed760; /* Cor ligeiramente mais clara no hover */
+}
+
+.artist-card {
+  position: relative;
+  /* Outras estilizações do card */
+  overflow: hidden; /* Evita que o botão saia da borda do card */
+}
+
+.artist-card .play .fa-play,
+.artist-card .play .fa-pause {
+  opacity: 1; /* Garante que o ícone de play/pause esteja visível */
+}
+
+/* Transição de visibilidade dos ícones */
+.play .fa-play {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.play .fa-pause {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#result-artist {
+	padding: 20px 40px;
+}

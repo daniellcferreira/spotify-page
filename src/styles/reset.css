@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+footer, header, main, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #000;
+  font-family: var(--font-dm-sans);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
